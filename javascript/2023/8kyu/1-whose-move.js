@@ -13,8 +13,8 @@ function whoseMove(lastPlayer, win) {
   }
 }
 
-console.log(whoseMove("black",false) ) //"white")
+console.log(whoseMove("black",false)) // "white"
 
-console.log(whoseMove("white",true) ) //"white")
+console.log(whoseMove("white",true)) // "white"
 
-console.log(whoseMove("white",false) ) //"black")
+console.log(whoseMove("white",false)) // "black"
