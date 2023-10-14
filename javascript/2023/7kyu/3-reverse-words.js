@@ -3,7 +3,7 @@
 
 function reverseWords(str) {
   const strSplit = str.split(' ')
-  const chars = strSplit.map((char) => char.length > 1 ? char.split("").reverse().join("") : char )
+  const chars = strSplit.map((char) => char.split("").reverse().join(""))
   return [...chars].join(' ')
 }
 
