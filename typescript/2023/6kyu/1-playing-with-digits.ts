@@ -17,4 +17,4 @@ const dig_pow = (num: number, pow: number) => {
 console.log(dig_pow(89, 1)) // 1
 console.log(dig_pow(92, 1)) // -1
 console.log(dig_pow(114, 3)) // 9
-console.log(dig_pow((46288, 3) // 51
+console.log(dig_pow(46288, 3)) // 51
