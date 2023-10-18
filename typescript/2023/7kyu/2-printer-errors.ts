@@ -17,6 +17,14 @@ export function printerError(s: string): string {
   return `${error}/${s.length}`
 }
 
+export function printerError2(s: string): string {
+  let error: number = 0
+  s.split('').map((s) => (s > 'm' ? error++ : null))
+  return `${error}/${s.length}`
+}
+
 console.log(printerError('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz')) // "3/56"
+console.log(printerError2('aaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz')) // "3/56"
+
 console.log(printerError('kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyz')) // "6/60"
 console.log(printerError('kkkwwwaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbmmmmmmmmmmmmmmmmmmmxyzuuuuu')) // "11/65"
