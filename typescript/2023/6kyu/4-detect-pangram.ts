@@ -4,7 +4,7 @@
 export const isPangram = (phrase: string): boolean => {
   const abc: string[] = 'abcdefghijklmnopqrstuvwxyz'.split('')
   const splitPhrase: string[] = phrase.split('')
-  const letters =  splitPhrase.map(letter => abc.includes(letter.toLowerCase())? letter.toLowerCase() : false)
+  const letters: (string | false)[] =  splitPhrase.map(letter => abc.includes(letter.toLowerCase())? letter.toLowerCase() : false)
  return  [...new Set(letters)].filter(elem => elem !== false).length === 26 ? true : false
 }
 
